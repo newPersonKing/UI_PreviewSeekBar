@@ -12,4 +12,3 @@ dependencies {
     api "androidx.appcompat:appcompat:$appcompatVersion"
 }
 
-apply from: rootProject.file('gradle/publish.gradle')

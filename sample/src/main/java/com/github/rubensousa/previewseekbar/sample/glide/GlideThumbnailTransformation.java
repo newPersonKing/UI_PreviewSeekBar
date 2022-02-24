@@ -35,6 +35,7 @@ public class GlideThumbnailTransformation extends BitmapTransformation {
     private int x;
     private int y;
 
+    // 计算他是第几列 第几行
     public GlideThumbnailTransformation(long position) {
         int square = (int) position / THUMBNAILS_EACH;
         y = square / MAX_LINES;
@@ -57,6 +58,7 @@ public class GlideThumbnailTransformation extends BitmapTransformation {
         return Bitmap.createBitmap(toTransform, x * width, y * height, width, height);
     }
 
+    // 缓存key
     @Override
     public void updateDiskCacheKey(MessageDigest messageDigest) {
         byte[] data = ByteBuffer.allocate(8).putInt(x).putInt(y).array();

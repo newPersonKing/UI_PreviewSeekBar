@@ -1,3 +1,8 @@
+知识点：1 展示电影对应帧预览图的方式：预设一张由所有帧合成的图片，当然每一帧 跟每一帧之间是有一个时间间隔的
+       2 根据播放进度 动态移动预览的Imageview
+       3 读取每一帧图片的逻辑在GlideThumbnailTransformation
+
+
 # PreviewSeekBar
 
 A SeekBar suited for showing a video preview. As seen in Google Play Movies

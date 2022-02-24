@@ -14,4 +14,3 @@ dependencies {
     api "com.google.android.exoplayer:exoplayer-ui:$exoPlayerVersion"
 }
 
-apply from: rootProject.file('gradle/publish.gradle')
